@@ -38,7 +38,10 @@
           </div>
 
           <form class="search__form" action="#">
-            <label class="search__label" for="search-city"><i class="search__icon fa-solid fa-location-dot"></i></label>
+            <label class="search__label" for="search-city">
+              <i class="search__icon fa-solid fa-location-dot" aria-hidden="true"></i>
+              <span class="sr-only">Ville</span>
+            </label>
             <input class="search__input" type="text" name="city" id="search-city" value="Marseille, France" />
             <button class="search__button" type="submit">Rechercher</button>
           </form>
@@ -46,16 +49,37 @@
           <div class="filters">
             <p class="filters__title">Filtres</p>
             <ul class="filters__list">
-              <li><button>Économique</button></li>
-              <li><button>Familial</button></li>
-              <li><button>Romantique</button></li>
-              <li><button>Nos pépites</button></li>
+              <li class="filters__item">
+                <button class="filters__button" type="button">
+                  <i class="filters__icon fa-solid fa-money-bill-wave" aria-hidden="true"></i>
+                  Économique
+                </button>
+              </li>
+              <li class="filters__item">
+                <button class="filters__button" type="button">
+                  <i class="filters__icon fa-solid fa-person" aria-hidden="true"></i>
+                  Familial
+                </button>
+              </li>
+              <li class="filters__item">
+                <button class="filters__button" type="button">
+                  <i class="filters__icon fa-solid fa-heart" aria-hidden="true"></i>
+                  Romantique
+                </button>
+              </li>
+              <li class="filters__item">
+                <button class="filters__button" type="button">
+                  <i class="filters__icon fa-solid fa-fire" aria-hidden="true"></i>
+                  Nos pépites
+                </button>
+              </li>
             </ul>
           </div>
         </section>
 
         <!-- HEBERGEMENTS & POPULAIRE -->
         <div class="hebergements-and-populaires">
+          <!-- <p>Plus de 500 logements sont disponibles dans cette ville</p> -->
           <!-- Hebergements -->
           <section class="hebergements"></section>
 

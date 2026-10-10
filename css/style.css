@@ -13,6 +13,18 @@
   color: var(--main-color);
 }
 
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 body {
   display: flex;
   justify-content: center;
@@ -38,13 +50,12 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 49px;
+  height: 79px;
 }
 
 .header__logo {
-  height: auto;
-  width: 60px;
-  align-self: flex-end;
+  height: 19px;
+  width: 61px;
 }
 
 .header__list {
@@ -52,11 +63,11 @@ a {
   list-style: none;
   gap: 70px;
   margin: 0;
-  padding: 0;
+  padding: 0 0 29px 0;
 }
 
 .header__link {
-  padding-top: 13.5px;
+  padding-top: 14px;
   border-top: 2px solid transparent;
 }
 
@@ -67,32 +78,55 @@ a {
 }
 
 /****** Search ***********/
+.search {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  height: 281px;
+  margin-top: 30px;
+}
 
-/*** Search Intro ***/
+/** Search Intro **/
+.search__intro {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
 
-/*** Search Form ***/
+.search__title {
+  margin: 0;
+  font-size: 22px;
+}
+
+.search__subtitle {
+  margin: 0;
+}
+
+/** Search Form **/
 .search__form {
   display: flex;
-  height: 40px;
+  height: 50px;
 }
 
 .search__label {
-  width: 40px;
+  width: 50px;
   background-color: var(--main-bg-color);
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 12px 0 0 12px;
+  border-radius: 15px 0 0 15px;
 }
 
 .search__icon {
   color: black;
+  font-size: 18px;
 }
 
 .search__input {
-  border: 2px solid var(--main-bg-color);
+  border: 1px solid var(--main-bg-color);
   border-right: none;
-  padding: 0 20px;
+  padding: 0 23px;
+  width: 147px;
   font-size: 18px;
   font-weight: 700;
 }
@@ -101,13 +135,58 @@ a {
   background-color: var(--main-color);
   color: white;
   border: none;
-  border-radius: 0 12px 12px 0;
-  padding: 0 18px;
+  border-radius: 0 15px 15px 0;
+  padding: 15px 16px;
+  width: 134px;
   font-size: 18px;
   font-weight: 700;
   cursor: pointer;
 }
 
+/** Search Filters **/
+.filters {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  height: 50px;
+}
+
+.filters__title {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.filters__list {
+  display: flex;
+  gap: 15px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.filters__button {
+  background-color: white;
+  border: 2px solid #d9d9d9;
+  border-radius: 25px;
+  padding: 12px 18px;
+  font-size: 17px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.filters__button:hover,
+.filters__button:focus-visible {
+  background-color: var(--filter-bg-color);
+}
+
+.filters__icon {
+  font-size: 22px;
+}
 /******  ***********/
 .section-title {
   margin: 0;
@@ -140,6 +219,7 @@ a {
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
   display: flex;
+
   justify-content: space-between;
 }
 
