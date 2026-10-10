@@ -37,12 +37,19 @@
             <p class="search__subtitle">En plein centre-ville ou en pleine nature</p>
           </div>
 
-          <form class="search__form" action="#"></form>
+          <form class="search__form" action="#">
+            <label class="search__label" for="search-city"><i class="search__icon fa-solid fa-location-dot"></i></label>
+            <input class="search__input" type="text" name="city" id="search-city" value="Marseille, France" />
+            <button class="search__button" type="submit">Rechercher</button>
+          </form>
 
           <div class="filters">
             <p class="filters__title">Filtres</p>
             <ul class="filters__list">
-              <li></li>
+              <li><button>Économique</button></li>
+              <li><button>Familial</button></li>
+              <li><button>Romantique</button></li>
+              <li><button>Nos pépites</button></li>
             </ul>
           </div>
         </section>
