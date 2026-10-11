@@ -24,8 +24,8 @@
         <img class="header__logo" src="images/logo/Booki.png" alt="Booki" />
         <nav class="header__nav" aria-label="Navigation principale">
           <ul class="header__list">
-            <li class="header__item"><a class="header__link" href="#">Hébergements</a></li>
-            <li class="header__item"><a class="header__link" href="#">Activités</a></li>
+            <li class="header__item"><a class="header__link" href="#hebergements">Hébergements</a></li>
+            <li class="header__item"><a class="header__link" href="#activites">Activités</a></li>
           </ul>
         </nav>
       </header>
@@ -88,7 +88,7 @@
         <!-- HEBERGEMENTS & POPULAIRES -->
         <div class="hebergements-and-populaires">
           <!-- Hebergements -->
-          <section class="hebergements">
+          <section class="hebergements" id="hebergements">
             <h2 class="section-title">Hébergements à Marseille</h2>
 
             <div class="hebergements__cards">
@@ -295,7 +295,7 @@
           </section>
         </div>
 
-        <section class="activites">
+        <section class="activites" id="activites">
           <h2 class="section-title">Activités à Marseille</h2>
 
           <div class="activites__cards">
@@ -341,7 +341,35 @@
           </div>
         </section>
       </main>
-      <footer></footer>
+
+      <footer class="footer">
+        <nav class="footer__nav" aria-label="Liens utiles">
+          <div class="footer__column">
+            <h2 class="footer__title">À propos</h2>
+            <ul class="footer__list">
+              <li><a class="footer__link" href="#">Fonctionnement du site</a></li>
+              <li><a class="footer__link" href="#">Conditions générales</a></li>
+              <li><a class="footer__link" href="#">Données et confidentialité</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__column">
+            <h2 class="footer__title">Nos hébergements</h2>
+            <ul class="footer__list">
+              <li><a class="footer__link" href="#">Charte qualité</a></li>
+              <li><a class="footer__link" href="#">Proposer votre hôtel</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__column">
+            <h2 class="footer__title">Assistance</h2>
+            <ul class="footer__list">
+              <li><a class="footer__link" href="#">Centre d'aide</a></li>
+              <li><a class="footer__link" href="#">Nous contacter</a></li>
+            </ul>
+          </div>
+        </nav>
+      </footer>
     </div>
   </body>
 </html>
