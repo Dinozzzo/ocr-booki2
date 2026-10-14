@@ -624,6 +624,8 @@ a {
     width: 100%;
     justify-content: flex-start;
     font-size: 14px;
+    padding: 12px clamp(8px, 18vw - 49px, 18px);
+    gap: clamp(6px, 7vw - 16px, 10px);
   }
 
   /****** Hébergements & Populaires (mobile) ******/
